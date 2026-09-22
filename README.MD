@@ -114,6 +114,7 @@ CREATE TABLE historico_comentarios (
     FOREIGN KEY (id_chamado) REFERENCES chamado(id),
     FOREIGN KEY (id_usuario) REFERENCES usuario(id)
 );
+```
 
 ---
 
@@ -144,3 +145,4 @@ INSERT INTO historico_comentarios VALUES
 (1,1,1,'2026-09-01 08:00:00','Abertura do chamado','Abertura'),
 (2,1,1,'2026-09-02 14:00:00','Problema resolvido','Solucao'),
 (3,2,2,'2026-09-03 10:30:00','Tecnico designado','Atualizacao');
+```
