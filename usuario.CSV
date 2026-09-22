@@ -1,5 +1,5 @@
-| id | nome | email | telefone | departamento | cargo | status |
-|----|------|--------|----------|-------------|--------|--------|
-| 1 | João Silva | joao@empresa.com | 19999999999 | Financeiro | Analista | Ativo |
-| 2 | Maria Souza | maria@empresa.com | 19988888888 | RH | Assistente | Ativo |
-| 3 | Carlos Lima | carlos@empresa.com | 19977777777 | TI | Coordenador | Ativo |
+id,nome,email,telefone,departamento,cargo,status
+1,João Silva,joao@empresa.com,19999999999,Financeiro,Analista,Ativo
+2,Maria Souza,maria@empresa.com,19988888888,RH,Assistente,Ativo
+3,Carlos Lima,carlos@empresa.com,19977777777,TI,Coordenador,Ativo
+tecnicos.csv
