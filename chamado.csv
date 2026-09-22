@@ -1,5 +1,5 @@
 | id | titulo | descricao | data_abertura | data_fechamento | status | prioridade | id_usuario | id_categoria | id_tecnico |
 |----|---------|-----------|--------------|----------------|---------|------------|------------|-------------|-----------|
 | 1 | Computador não liga | Equipamento não inicia | 2026-09-01 | 2026-09-02 | Fechado | Alta | 1 | 1 | 1 |
-| 2 | Erro no sistema | Falha ao acessar ERP | 2026-09-03 | NULL | Em Andamento | Média | 2 | 2 | 2 |
-| 3 | Internet lenta | Conexão instável | 2026-09-05 | NULL | Aberto | Baixa | 3 | 3 | 3 |
+| 2 | Erro no sistema | Falha ao acessar ERP | 2026-09-03 | Nenhuma | Em Andamento | Média | 2 | 2 | 2 |
+| 3 | Internet lenta | Conexão instável | 2026-09-05 | Nenhuma | Aberto | Baixa | 3 | 3 | 3 |
