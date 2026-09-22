@@ -48,45 +48,13 @@
 
 # Dados de Teste
 
-## usuario.csv
+Os dados de teste estão disponíveis nos arquivos CSV abaixo:
 
-| id | nome | email | telefone | departamento | cargo | status |
-|----|------|--------|----------|-------------|--------|--------|
-| 1 | João Silva | joao@empresa.com | 19999999999 | Financeiro | Analista | Ativo |
-| 2 | Maria Souza | maria@empresa.com | 19988888888 | RH | Assistente | Ativo |
-| 3 | Carlos Lima | carlos@empresa.com | 19977777777 | TI | Coordenador | Ativo |
-
-## tecnico.csv
-
-| id | nome | email | especialidade | status |
-|----|------|--------|--------------|--------|
-| 1 | Pedro Santos | pedro@empresa.com | Hardware | Ativo |
-| 2 | Ana Costa | ana@empresa.com | Software | Ativo |
-| 3 | Lucas Alves | lucas@empresa.com | Redes | Ativo |
-
-## categoria.csv
-
-| id | nome | descricao |
-|----|------|-----------|
-| 1 | Hardware | Problemas físicos em equipamentos |
-| 2 | Software | Problemas em sistemas e programas |
-| 3 | Rede | Falhas de conexão e internet |
-
-## chamado.csv
-
-| id | titulo | descricao | data_abertura | data_fechamento | status | prioridade | id_usuario | id_categoria | id_tecnico |
-|----|---------|-----------|--------------|----------------|---------|------------|------------|-------------|-----------|
-| 1 | Computador não liga | Equipamento não inicia | 2026-09-01 | 2026-09-02 | Fechado | Alta | 1 | 1 | 1 |
-| 2 | Erro no sistema | Falha ao acessar ERP | 2026-09-03 | Nenhuma | Em Andamento | Média | 2 | 2 | 2 |
-| 3 | Internet lenta | Conexão instável | 2026-09-05 | Nenhuma | Aberto | Baixa | 3 | 3 | 3 |
-
-## historico_comentarios.csv
-
-| id | id_chamado | id_usuario | data_hora | descricao | tipo |
-|----|------------|------------|------------|-----------|------|
-| 1 | 1 | 1 | 2026-09-01 08:00:00 | Abertura do chamado | Abertura |
-| 2 | 1 | 1 | 2026-09-02 14:00:00 | Problema resolvido | Solução |
-| 3 | 2 | 2 | 2026-09-03 10:30:00 | Técnico designado | Atualização |
+- [usuario.csv](usuario.csv)
+- [tecnico.csv](tecnico.csv)
+- [categoria.csv](categoria.csv)
+- [chamado.csv](chamado.csv)
+- [historico_comentarios.csv](historico_comentarios.csv)
 
 ---
 
@@ -146,34 +114,3 @@ CREATE TABLE historico_comentarios (
     FOREIGN KEY (id_chamado) REFERENCES chamado(id),
     FOREIGN KEY (id_usuario) REFERENCES usuario(id)
 );
-```
-
----
-
-# DML
-
-```sql
-(1,'João Silva','joao@empresa.com','19999999999','Financeiro','Analista','Ativo'),
-(2,'Maria Souza','maria@empresa.com','19988888888','RH','Assistente','Ativo'),
-(3,'Carlos Lima','carlos@empresa.com','19977777777','TI','Coordenador','Ativo');
-
-INSERT INTO tecnico VALUES
-(1,'Pedro Santos','pedro@empresa.com','Hardware','Ativo'),
-(2,'Ana Costa','ana@empresa.com','Software','Ativo'),
-(3,'Lucas Alves','lucas@empresa.com','Redes','Ativo');
-
-INSERT INTO categoria VALUES
-(1,'Hardware','Problemas físicos em equipamentos'),
-(2,'Software','Problemas em sistemas e programas'),
-(3,'Rede','Falhas de conexão e internet');
-
-INSERT INTO chamado VALUES
-(1,'Computador não liga','Equipamento não inicia','2026-09-01','2026-09-02','Fechado','Alta',1,1,1),
-(2,'Erro no sistema','Falha ao acessar ERP','2026-09-03',NULL,'Em Andamento','Media',2,2,2),
-(3,'Internet lenta','Conexão instável','2026-09-05',NULL,'Aberto','Baixa',3,3,3);
-
-INSERT INTO historico_comentarios VALUES
-(1,1,1,'2026-09-01 08:00:00','Abertura do chamado','Abertura'),
-(2,1,1,'2026-09-02 14:00:00','Problema resolvido','Solucao'),
-(3,2,2,'2026-09-03 10:30:00','Tecnico designado','Atualizacao');
-```
