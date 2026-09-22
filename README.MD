@@ -77,8 +77,8 @@
 | id | titulo | descricao | data_abertura | data_fechamento | status | prioridade | id_usuario | id_categoria | id_tecnico |
 |----|---------|-----------|--------------|----------------|---------|------------|------------|-------------|-----------|
 | 1 | Computador não liga | Equipamento não inicia | 2026-09-01 | 2026-09-02 | Fechado | Alta | 1 | 1 | 1 |
-| 2 | Erro no sistema | Falha ao acessar ERP | 2026-09-03 | NULL | Em Andamento | Média | 2 | 2 | 2 |
-| 3 | Internet lenta | Conexão instável | 2026-09-05 | NULL | Aberto | Baixa | 3 | 3 | 3 |
+| 2 | Erro no sistema | Falha ao acessar ERP | 2026-09-03 | Nenhuma | Em Andamento | Média | 2 | 2 | 2 |
+| 3 | Internet lenta | Conexão instável | 2026-09-05 | Nenhuma | Aberto | Baixa | 3 | 3 | 3 |
 
 ## historico_comentarios.csv
 
@@ -93,7 +93,6 @@
 # DDL
 
 ```sql
--- DROP DATABASE IF EXISTS atendimento_chamados;
 CREATE DATABASE atendimento_chamados;
 USE atendimento_chamados;
 
@@ -154,7 +153,6 @@ CREATE TABLE historico_comentarios (
 # DML
 
 ```sql
--- INSERT INTO usuario VALUES
 (1,'João Silva','joao@empresa.com','19999999999','Financeiro','Analista','Ativo'),
 (2,'Maria Souza','maria@empresa.com','19988888888','RH','Assistente','Ativo'),
 (3,'Carlos Lima','carlos@empresa.com','19977777777','TI','Coordenador','Ativo');
