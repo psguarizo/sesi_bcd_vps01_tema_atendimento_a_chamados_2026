@@ -1,0 +1,5 @@
+| id | id_chamado | id_usuario | data_hora | descricao | tipo |
+|----|------------|------------|------------|-----------|------|
+| 1 | 1 | 1 | 2026-09-01 08:00:00 | Abertura do chamado | Abertura |
+| 2 | 1 | 1 | 2026-09-02 14:00:00 | Problema resolvido | Solução |
+| 3 | 2 | 2 | 2026-09-03 10:30:00 | Técnico designado | Atualização |

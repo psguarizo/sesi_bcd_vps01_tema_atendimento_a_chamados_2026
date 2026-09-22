@@ -1,0 +1,5 @@
+| id | nome | email | especialidade | status |
+|----|------|--------|--------------|--------|
+| 1 | Pedro Santos | pedro@empresa.com | Hardware | Ativo |
+| 2 | Ana Costa | ana@empresa.com | Software | Ativo |
+| 3 | Lucas Alves | lucas@empresa.com | Redes | Ativo |
